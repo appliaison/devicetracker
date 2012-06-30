@@ -1,0 +1,32 @@
+<html>
+			<head>
+			  <title>Testing hotkeys</title>
+			 <script type="text/javascript" src="shortcuts.js"></script>   
+			<script type="text/javascript">
+            function markCalled(id) {
+
+               // document.getElementById('type').focus();
+            }
+            function init()
+            {
+                
+                shortcut.add("Ctrl+s", function() {
+                    alert("Ctrl S was pressed");
+                });
+				
+				shortcut.add("",function() {
+				alert("escape was pressed");
+				},{"keycode":27});
+
+
+            }
+
+        </script> 
+			</head>
+			<body onload="init()">
+			  <p>This page tests hotkeys</p>
+
+
+		
+		</body>
+		</html>

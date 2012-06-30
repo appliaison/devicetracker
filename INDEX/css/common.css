@@ -1,0 +1,83 @@
+body {
+  color: black;
+}
+.disclaimer {
+border-top:1px solid #CCCCCC;
+
+font-size:0.9em;
+padding-top:0.5em;
+}
+dl {
+margin:0pt 1em;
+padding:0pt;
+}
+dl, form {
+float:left;
+}
+li {
+padding:0.1em 0pt;
+}
+hr {
+background:#FFFFFF none repeat scroll 0%;
+border-color:-moz-use-text-color -moz-use-text-color #FFFFFF;
+border-style:none none solid;
+border-width:0pt 0pt 1px;
+clear:both;
+height:0pt;
+margin:0pt 0pt 1em;
+padding:0pt;
+width:100%;
+}
+
+td[axis="number"], td[axis="date"] {
+text-align:right;
+}
+th {
+background-color:#B4C4D1;
+padding:2px 20px;
+}
+tfoot td {
+border-top:1px solid #000033;
+}
+thead th {
+border-bottom:2px solid #000033;
+}
+.odd td {
+background-color:#E8ECF1;
+}
+.even td {
+background-color:#DDE5EB;
+}
+.hover td {
+background-color:#A5B3C9;
+}
+.sortedminus {
+background-color:#EECCCC;
+}
+.sortedplus {
+background-color:#CCEECC;
+}
+.selrow td {
+background-color:#879AB7;
+}
+#s {
+float:left;
+}
+#d {
+clear:none;
+float:left;
+}
+form#tabletool {
+margin:0pt;
+padding:0.5em;
+}
+form#tabletool fieldset {
+text-align:center;
+width:8em;
+}
+form#tabletool legend {
+margin:0pt auto;
+}
+form#tabletool input {
+margin:0.5em;
+}

@@ -1,0 +1,122 @@
+div.autosuggest {
+background-image:url(img_inquisitor/as_pointer.gif);
+background-position:center top;
+background-repeat:no-repeat;
+padding:10px 0 0;
+position:absolute;
+}
+div.autosuggest div.as_header, div.autosuggest div.as_footer {
+background-image:url(img_inquisitor/ul_corner_tr.gif);
+background-position:right top;
+background-repeat:no-repeat;
+height:6px;
+overflow:hidden;
+padding:0 6px;
+position:relative;
+}
+div.autosuggest div.as_footer {
+background-image:url(img_inquisitor/ul_corner_br.gif);
+}
+div.autosuggest div.as_header div.as_corner, div.autosuggest div.as_footer div.as_corner {
+background-image:url(img_inquisitor/ul_corner_tl.gif);
+background-position:left top;
+background-repeat:no-repeat;
+height:6px;
+left:0;
+position:absolute;
+top:0;
+width:6px;
+}
+div.autosuggest div.as_footer div.as_corner {
+background-image:url(img_inquisitor/ul_corner_bl.gif);
+}
+div.autosuggest div.as_header div.as_bar, div.autosuggest div.as_footer div.as_bar {
+background-color:#333333;
+height:6px;
+overflow:hidden;
+}
+div.autosuggest ul {
+background-color:#333333;
+list-style-image:none;
+list-style-position:outside;
+list-style-type:none;
+margin:0 0 -4px;
+overflow:hidden;
+padding:0;
+}
+div.autosuggest ul li {
+color:#CCCCCC;
+margin:0 4px 4px;
+padding:0;
+text-align:left;
+}
+div.autosuggest ul li a {
+background-color:transparent;
+color:#CCCCCC;
+display:block;
+padding:0;
+position:relative;
+text-decoration:none;
+text-shadow:0 0 5px #000000;
+width:100%;
+}
+div.autosuggest ul li a:hover {
+background-color:#444444;
+}
+div.autosuggest ul li.as_highlight a:hover {
+background-color:#1B5CCD;
+}
+div.autosuggest ul li a span {
+display:block;
+font-weight:bold;
+padding:3px 6px;
+}
+div.autosuggest ul li a span small {
+color:#999999;
+font-weight:normal;
+}
+div.autosuggest ul li.as_highlight a span small {
+color:#CCCCCC;
+}
+div.autosuggest ul li.as_highlight a {
+background-color:#1B5CCD;
+background-image:url(img_inquisitor/hl_corner_br.gif);
+background-position:right bottom;
+background-repeat:no-repeat;
+color:#FFFFFF;
+}
+div.autosuggest ul li.as_highlight a span {
+background-image:url(img_inquisitor/hl_corner_bl.gif);
+background-position:left bottom;
+background-repeat:no-repeat;
+}
+div.autosuggest ul li a .tl, div.autosuggest ul li a .tr {
+background-repeat:no-repeat;
+height:6px;
+margin:0;
+padding:0;
+position:absolute;
+top:0;
+width:6px;
+}
+div.autosuggest ul li a .tr {
+right:0;
+}
+div.autosuggest ul li.as_highlight a .tl {
+background-image:url(img_inquisitor/hl_corner_tl.gif);
+background-position:left bottom;
+left:0;
+}
+div.autosuggest ul li.as_highlight a .tr {
+background-image:url(img_inquisitor/hl_corner_tr.gif);
+background-position:right bottom;
+right:0;
+}
+div.autosuggest ul li.as_warning {
+font-weight:bold;
+text-align:center;
+}
+div.autosuggest ul em {
+color:#6EADE7;
+font-style:normal;
+}

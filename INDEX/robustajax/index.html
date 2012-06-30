@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Robust HTML Form Validation</title>
+<style type="text/css">
+<!--
+body,td,th {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000;
+}
+body {
+	background-color: #FDFDFD;
+}
+label {
+	background-color: #FAFBFB;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-top-color: #E7EAEB;
+	border-right-color: #E7EAEB;
+	border-bottom-color: #E7EAEB;
+	border-left-color: #E7EAEB;
+	color: #6D309B;
+	font-size: 10px;
+}
+input {
+	background-color: #F2F4F5;
+	border: 1px solid #DDE1E2;
+}
+.badinput {
+	background-color: #F7E1DB;
+	border: 1px solid #C76565;
+}
+.goodinput {
+	background-color: #E1FFE1;
+	border: 1px solid #0C0;
+}
+-->
+</style>
+<script language="javascript" type="text/javascript" src="jquery.js"></script>
+<script language="javascript" type="text/javascript">
+function ValidateInput(input)
+{
+	var id = input.id;
+	var value = input.value;
+	
+	$("#" + id).fadeOut();
+	
+	$("#" + id).removeClass('goodinput');
+	$("#" + id).removeClass('badinput');
+	
+	$.post("validate.php", { inputdata: value },
+	
+	function(data)
+	{
+		if(data == 1)
+			$("#" + id).addClass('goodinput');
+		else
+			$("#" + id).addClass('badinput');	
+			
+		$("#" + id).fadeIn();
+  	});
+}
+
+$(document).ready(function()
+{
+	var RequiredFields = new Array();
+	RequiredFields[0] = "username";
+	RequiredFields[1] = "password";
+	RequiredFields[2] = "email_address";
+	
+	for(i=0; i < RequiredFields.length; i++)
+	{
+		$("#" + RequiredFields[i]).blur(function()
+		{
+		   ValidateInput(this);
+		});
+	}
+});
+</script>
+</head>
+
+<body>
+<form action="action.php" method="post" enctype="application/x-www-form-urlencoded" name="registration_form" id="registration_form">
+  <table width="39%" border="0" align="center" cellpadding="5" cellspacing="6">
+    <tr>
+      <td><label>username
+          <br />
+          <input type="text" name="username" id="username" />
+      </label></td>
+      <td><label>password
+          <br />
+          <input type="password" name="password" id="password" />
+      </label></td>
+    </tr>
+    <tr>
+      <td><label>email address
+          <br />
+          <input type="text" name="email_address" id="email_address" />
+      </label></td>
+      <td><input type="submit" name="submit" id="submit" value="Register" style="color: #6D828F; font-weight: bold" /></td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>

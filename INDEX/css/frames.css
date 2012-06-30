@@ -1,0 +1,119 @@
+.jsLink {
+  border-bottom:1px dotted #09C;
+  cursor:pointer;
+}
+
+
+/* 3 col flanking menus */
+
+
+
+#leftFrame {
+position:absolute;
+width:300px;
+top:100px;
+left:400px;
+border:1px dashed black;
+background-color:#eee;
+padding:10px;
+z-index:0;
+
+
+voice-family: "\"}\"";
+voice-family:inherit;
+width:300px;
+}
+
+body>#leftFrame {width:270px;}
+
+#leftFrameBottom {
+position:absolute;
+width:300px;
+top:300px;
+left:400px;
+border:1px dashed black;
+background-color:#eee;
+padding:10px;
+z-index:0;
+
+
+voice-family: "\"}\"";
+voice-family:inherit;
+width:300px;
+}
+
+body>#leftFrameBottom {width:270px;}
+
+#rightFrame {
+position:absolute;
+width:300px;
+top:100px;
+left:750px;
+border:1px dashed black;
+background-color:#eee;
+padding:10px;
+z-index:0;
+
+
+voice-family: "\"}\"";
+voice-family:inherit;
+width:300px;
+}
+
+body>#rightFrame {width:270px;}
+
+#rightFrameBottom {
+position:absolute;
+width:300px;
+top:300px;
+left:750px;
+border:1px dashed black;
+background-color:#eee;
+padding:10px;
+z-index:0;
+
+
+voice-family: "\"}\"";
+voice-family:inherit;
+width:300px;
+}
+
+body>#rightFrameBottom {width:270px;}
+
+
+div.sugdiv {
+background-color:#FFFFFF;
+border:0 none;
+position:absolute;
+text-align:left;
+}
+
+#quicksigninFrame {
+position:absolute;
+width:300px;
+top:100px;
+left:400px;
+border:1px dashed black;
+background-color:#eee;
+padding:10px;
+z-index:0;
+voice-family: "\"}\"";
+voice-family:inherit;
+width:600px;
+}
+
+#centerFrame {
+position:absolute;
+width:300px;
+top:100px;
+left:400px;
+border:1px dashed black;
+background-color:#eee;
+padding:10px;
+z-index:0;
+
+
+voice-family: "\"}\"";
+voice-family:inherit;
+width:800px;
+}
